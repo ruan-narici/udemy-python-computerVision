@@ -36,7 +36,8 @@ print(detections);
 # Percorrendo as deteccoes e criando retangulos na imagem original(colorida)
 for x, y, w, h in detections: 
     # rectangle recebe como parametro a imagem, o inicio (x, y), o tamanho (x+width, y+height), a cor BGR, o tamanho do traço
-    cv.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 4);
+    cv.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 2);
 
 cv.imshow('Faces detectadas', image);
 cv.waitKey(0);
+
