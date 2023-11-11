@@ -27,7 +27,7 @@ imageGray = cv.cvtColor(image, cv.COLOR_BGR2GRAY);
 faceDetector = cv.CascadeClassifier('./assets/Cascades/haarcascade_frontalface_default.xml');
 
 # Executando a deteccao de faces através do metodo detectMultiScale
-detections = faceDetector.detectMultiScale(imageGray);
+detections = faceDetector.detectMultiScale(imageGray, 1.09);
 
 # Exibindo as deteccoes
 # Padrao de exibicao (x, y, width, height)
