@@ -40,4 +40,3 @@ for x, y, w, h in detections:
 
 cv.imshow('Faces detectadas', image);
 cv.waitKey(0);
-

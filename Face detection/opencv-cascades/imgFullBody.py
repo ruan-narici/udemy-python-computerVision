@@ -15,7 +15,6 @@ bodysDetected = fullBodyDetector.detectMultiScale(
 );
 
 for x, y, w, h in bodysDetected:
-    print([w, h])
     cv.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 2);
 
 cv.imshow("Image", image);
