@@ -6,7 +6,7 @@ import os;
 lbphFaceDetector = cv.face.LBPHFaceRecognizer().create();
 lbphFaceDetector.read("./assets/Datasets/yalefaces/lbph_classifier.yml");
 
-expectedPersonPath = "./assets/Datasets/yalefaces/test/subject05.sleepy.gif";
+expectedPersonPath = "./assets/Datasets/yalefaces/test/subject01.happy.gif";
 
 imagePerson = Image.open(expectedPersonPath).convert('L');
 imagePersonNumpy = np.array(imagePerson, 'uint8');
