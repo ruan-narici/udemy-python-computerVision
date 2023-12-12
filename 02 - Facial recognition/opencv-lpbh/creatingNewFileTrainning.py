@@ -30,6 +30,6 @@ def getImageData():
 
 ids, faces = getImageData();
 
-lbphClassifier = cv.face.LBPHFaceRecognizer.create();
+lbphClassifier = cv.face.LBPHFaceRecognizer_create();
 lbphClassifier.train(faces, ids);
-lbphClassifier.write("./assets/Datasets/yalefaces/lbph_classifier.yml");
+lbphClassifier.write("lbph_classifier.yml");
