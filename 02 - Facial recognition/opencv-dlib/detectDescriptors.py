@@ -45,5 +45,5 @@ for path in paths:
     index [idx] = path;
     idx+=1;
 
-faceDiference = np.linalg.norm(facesDescriptors[1] - facesDescriptors[9]);
-print(faceDiference);
+faceDistanceDiference = np.linalg.norm(facesDescriptors[1] - facesDescriptors[9]);
+print(faceDistanceDiference);
